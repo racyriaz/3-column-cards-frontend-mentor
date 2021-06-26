@@ -1,0 +1,166 @@
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    /* For title, button, background */
+    --white: hsl(0, 0%, 95%);
+    /* For paras, sub-title*/
+    --gray: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-size: 15px;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--white);
+    margin: 0 2.5rem 2rem;
+    letter-spacing: 1.25px;
+}
+
+.content {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--gray);
+    margin: 0 1.8rem 5rem 2.5rem;
+    opacity: 0.8;
+    line-height: 21px;
+}
+
+.attribution {
+    font-family: 'Lexend Deca';
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    opacity: 0.5;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid coral;
+    width: 100%;
+    padding: 10%;
+}
+
+.card {
+    display: block;
+    width: 278px;
+    height: 450px;
+}
+
+.sedans {
+    width: 100%;
+    height: 100%;
+    background-color: var(--orange);
+    border-radius: 8px 0 0 8px;
+}
+
+.suv {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cyan);
+}
+
+.luxury {
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+
+.button {
+    padding: 10px 1.6rem;
+    border-radius: 1.6rem;
+    color: var(--white);
+    border: 2px solid var(--white);
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 2rem;
+}
+
+img {
+    margin: 2.5rem auto 2rem 2.5rem;
+    width: 58px;
+}
+
+
+/* Desktop version */
+
+@media only screen and (max-width:1001px) {
+    .card {
+        position: relative;
+        height: calc(450px + 2rem);
+    }
+    .button {
+        position: absolute;
+        bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* tablet version */
+
+@media only screen and (max-width:700px) {
+    .card {
+        position: relative;
+        height: calc(450px + 5rem);
+    }
+    .button {
+        position: absolute;
+        bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Mobile version */
+
+@media only screen and (max-width:640px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        position: relative;
+        height: calc(450px);
+    }
+    .button {
+        position: absolute;
+        bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .sedans {
+        border-radius: 8px 8px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 8px 8px;
+    }
+    .attribution {
+        position: inherit;
+        padding-bottom: 1rem;
+    }
+}
