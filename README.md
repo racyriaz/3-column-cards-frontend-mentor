@@ -26,13 +26,16 @@ Users should be able to:
 
 ### Screenshot
 
-**Desktop version**
+**Desktop version** 
+<br>
 ![Desktop version](./screenshots/desktop.png)<br>
 
-**Tablet / iPad version**
+**Tablet / iPad version** 
+<br>
 ![iPad version](./screenshots/ipad.png)<br>
 
-**Mobile version**
+**Mobile version** 
+<br>
 ![Mobible version](./screenshots/mobile.png)<br>
 
 ### Links
